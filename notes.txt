@@ -1,0 +1,237 @@
+http://reprap.org/wiki/Planning_and_preparing_for_a_build
+
+Solidoodle 3
+Solidoodle 4
+Ultimaker 2
+
+http://www.tomsguide.com/us/best-3d-printers,news-17552.html
+Richard rates the 3rd generation Solidoodle as the best bang for your buck
+
+Cube, from 3D Systems’ Cubify, is the best home printer for beginners 
+
+https://sites.google.com/site/3dprinterlist
+
+
+extruders:
+--------------------------------------------------------------------------------
+http://reprap.org/wiki/RepRap_Options#Extruder
+
+EMO25 extruder, which can extrude such neat materials as play-doh, clay, and self-setting rubber
+
+Cold end:
+  popular models:
+  * Wade's geared extruder
+  * Greg's hinged extruder
+  * Greg's Wade's Reloaded extruder
+  Seems to be printable with some additional hardware like
+  bearings and nuts. I'm gearing towards simply using a metal 
+  gear on a stepper motor (that's how it's done on the Zortrax M200)
+  Have to research more why this could be a bad idea.
+  Seems like the gearing is there to produce more torque? but since
+  ABS has less friction than PLA, maybe a single gear will suffice
+  for the cold end of the extruder.
+  Plenty of parts are available online for making a DIY cold end.
+
+
+Hot end:
+  Thermistor:
+  ThermoCouple:
+
+
+  Bowden extruder:
+    + Faster and lighter.
+    + less shaking
+    + Faster printing
+    - Hysteresis. The plastic filament will compress in any extruder, but
+      putting pressure on such a long length of filament will multiply the
+      effects of this compression, leading to springiness. The flexibility of
+      the PFTE tube exacerbates this problem.  It is potentially possible to
+      control this problem, perhaps with an encoder just above the hot end.
+      Software might also be able to reduce this problem, but would require
+      (maybe lengthy) calibration.
+
+    Note: The Bowden extruder is not helpful if you have a fixed printing head
+    (or moving in Z-only) and a XY-moving platform.
+
+    A stepper-based extruder is required if no encoder is used. 
+
+    Comparison chart:
+    http://reprap.org/wiki/Hot_End_Comparison
+
+
+http://e3d-online.com/
+  Good UK site, has the e3d extruders (original)
+
+
+Frame
+-----------
+
+Aluminium extrusions:
+  Joining methods:
+  http://www.aluminiumdesign.net/design-support/joining-aluminium/
+
+  https://www.google.se/search?q=aluminium+extrusion+T-Nut&espv=2&biw=983&bih=513&tbm=isch&imgil=odRI_dLCxQL_6M%253A%253B_4aUsEvjYbFAZM%253Bhttps%25253A%25252F%25252F3dbotic.com%25252Fhardware-resources-for-diy-3d-printer-kit%25252F&source=iu&pf=m&fir=odRI_dLCxQL_6M%253A%252C_4aUsEvjYbFAZM%252C_&usg=__xzq_UDiT9GOiRTsyjRcPOg8sKxE%3D&ved=0CD8Qyjc&ei=PTOHVPPcF-j-ywODxIKQCg#facrc=_&imgdii=odRI_dLCxQL_6M%3A%3Bp5D5s2t3XuRqsM%3BodRI_dLCxQL_6M%3A&imgrc=odRI_dLCxQL_6M%253A%3B_4aUsEvjYbFAZM%3Bhttp%253A%252F%252F123dprinter.com%252Fwp-content%252Fuploads%252F2012%252F11%252FBoschRexroth_T-Nut_1.jpg%3Bhttps%253A%252F%252F3dbotic.com%252Fhardware-resources-for-diy-3d-printer-kit%252F%3B316%3B385
+
+Where to get:
+  (UK also has 3D printing accessories): http://e3d-online.com/
+
+Deltas:
+
+Seems very interesting. Simpler frame construction, seem to have very good
+resolution if done right and a lot cooler than just having an ordinary 3D
+printer.
+
+Different delta designs:
+3DR Delta
+  https://www.youtube.com/watch?v=11PVy4AUbeQ
+  http://richrap.github.io/3DR-Delta-Printer/
+  http://richrap.com/
+  Assembly instructions (from creators blog)
+  http://richrap.blogspot.se/2013/07/3dr-reprap-delta-printer-part-1-release.html
+
+-----------------------
+Sourcing tips and notes
+-----------------------
+Steel rods (6mm and 8mm are commonly used for 3d printer designs)
+the linear bearings available will fit these two sizes.
+3DR uses 6mm by default, but there are modified versions out there which can use
+8mm.
+Where to get in sweden:
+  
+Online (international sites):
+
+Ebay sources:
+  weedo3dprinting (UK), have bearings, filament (PLA/ABS) and misc good metal
+  parts
+
+-------------------
+Controller boards
+-------------------
+RUMBA Basic Board:
+  used in 3DR Delta, available from
+   * http://www.reprapdiscount.com/electronics/33-rumba-basic-board.html#
+   * Dealextreme
+   * Alibaba 
+
+--------------------
+Controller firmwares
+--------------------
+Sprinter:
+  https://github.com/kliment/Sprinter
+  RAMPS (ie, AtMega one MCU controllers)
+
+Repetier:
+
+Marlin:
+
+---------------
+My 3DR project:
+---------------
+Printed Parts:
+All parts are fine printed in PLA, but you can use ABS if you prefer.
+
+Print the following parts with 30% honeycomb infill, two perimeters, ideally
+with a 0.4mm nozzle and 0.25mm or lower layers.
+
+3 x 3DR_Bottom_Motor_Mount_V2_001_RTP.stl
+3 x 3DR_Top_Electronics_Mount_V2_001_RTP.stl
+3 x 3DR_Top_cover_cap_V2_001_RTP.stl
+1 x 3DR_Top_Boss_V2_001_RTP.stl
+1 x 3DR_Bottom_Boss_V2_001_RTP.stl
+
+And also the following parts with 35% honeycomb infill, two perimeters, ideally
+with a 0.4mm nozzle and 0.15mm or lower layers.
+
+3 x 3DR_Spool_V2_001_RTP.stl
+3 x 3DR_Carriage_V2_001_for_LM6UU_RTP.stl
+1 x 3DR_Jhead_groove_mount_V2_001_PUSHFIT_RTP.stl
+1 x 3DR_micro_platform_V2_001_RTP.stl
+3 x 3DR_Print_Bed_catch_V2_001_RTP.stl
+
+These are the pushrods: (other sources are RC or universal TRAXX)
+12 x 3DR_RichRap_joint_and_rod_adapter_VERSION2_001_RTP.stl  (use concentric infill)
+
+For the extruder, you can use your own Bowden version or a choice of countless
+others, or my version:
+
+1 x 3DR_Extruder_body_V2_Test_001_RTP.stl
+1 x RichRap_Greg_style_Guidler_Modified_with_grab_lever_For_1_RTP.stl
+1 x herringbone-gear-large.stl
+1 x herringbone-gear-small.stl
+
+And the XXL LCD display and SD Card case is highly recommended to finish off your machine - 
+This LCD case is a modified version of the excelent design by wersy - design here
+
+1 x 3DR_LCDXXL_Base_RichRap_V2_001_RTP.stl
+1 x 3DR_Top_Case_XXL_V2_001_RTP.stl
+1 x 3DR_LCDXXL_Controller_knob_V2_001_shorter_RTP.stl
+1 x 3DR_LCDXXL_Kill_Button_V2_001_RTP.stl
+1 x 3DR_LCD_Adapter_RichRap_V2_001_RTP.stl
+
+Mechanical parts
+3 x Aluminium frame sections of 500mm long and
+6 x 6mm stainless steel rods 450mm long.
+6 x M5 washers (connecting the Plastic parts to the Aluminium frame)
+6 x M5 T-slot nuts for the Aluminium channel - I recommend getting more and adding them into all the channels so you can attach extruders, fans and other things to the machine
+6 x M5 x10/12mm Socket cap or dome bolts
+20 x M4 x12mm Socket cap or dome bolts for connecting most of the plastic parts together, and mounting the LCD adapter.
+40 x M4 washers - use on the above
+20 x M4 Crinkle washers - use on the above
+20 x M4 nuts (You can use Nylock nuts in many places rather than the Crinkle washers and normal nuts, but you need at least 4 x normal M4 nuts to complete the build
+10 x 3mm x 12mm self tapping screws - for the Hall-effect end-stops and LCD case.
+8 x M3 x 20mm Socket cap or dome bolts - for the bed catches and mounting the electronics.
+15 x M3 x 10mm Socket cap or dome bolts - for the motor's and extruder.
+9 x M3 x 6mm dome bolts. I know a silly size, but they are for the Motor Filament spools - you could cut down 10mm ones if they are tricky to get.)
+12 x M3 nut's 
+12+ Tie-wraps 3.2mm x 100mm for the carriages LM6UU's and tidy up electronics wiring.
+3 x M8 nut's (one is used on the Top Boss for the filament spool)
+1 x M8 Threaded rod x 120mm for Filament spool
+3+ M8 plain Washers
+3 x 608ZZ bearings
+6 x LM6UU Linear bearings
+
+4 x NEMA17 Stepper Motor's - ideally over 1.2M versions (look for 1.7A or 2.5A)
+    max 50mm Long body.  You should be able to use NEMA14 motors too, as the mounts
+    are designed to fit both, but I have not yet tried NEMA14's so let me know if
+    you try them out.
+
+3 x Hall effect end-stops (I'm using RepRapDiscount versions, here)
+1 x RUMBA Electronics (you can use other electronics sets, but 3DR electronic
+    mounts are spaced for RUMBA).
+    Megatronics electronics also fits nicely into the 3DR. RAMPS it a little
+    high but could be made to fit with a small printed adapter.
+
+4 x Pololu stepper motor drivers or equivalents
+1 x LCDXXL display and SD card Kit
+1 x M8 Hobbed Bolt
+1 x J-head MKV 1.75mm or similar / equivalent kit for Hot-end (heater cartridge
+    / resistor / thermistor / thermocouple) 1 x Teflon tube 4mm outer 2mm inner x
+    500mm long
+
+2 x 1/8" Pneumatic fittings (metal or plastic) 4mm Tube size 
+    About 6M of Spectra Line 90Lb (0.5mm) fishing line - or other options that
+    are similar.
+
+Material for the Build platform, it's a ~170mm circle 3mm thick - ideal materials are Di-bond, Aluminium or Tufnol. - Glass if you can get a round or hexagon shape.
+
+1 x USB cable.
+1 x 60W or higher DC 12V power supply (Brick)
+
+--------------------------------------------------------------------------------
+Terms and abbrevations
+--------------------------------------------------------------------------------
+oozing:
+  Reversing the extruder motor very quickly allows you to have less oozing.
+  Would this not withdraw the filement from the hot end?
+
+honeycomb infill:
+  
+perimeters:
+
+
+--------------------------------------------------------------------------------
+ABS details:
+--------------------------------------------------------------------------------
+Glassing temp = 105C
+Extruder target temp = 200-240C for smooth extrusion
+

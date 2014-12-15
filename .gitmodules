@@ -1,0 +1,4 @@
+[submodule "3DR-Delta-Printer"]
+	path = 3DR-Delta-Printer
+  url = https://github.com/gitsly/3DR-Delta-Printer.git
+#	url = ./3DR-Delta-Printer/
