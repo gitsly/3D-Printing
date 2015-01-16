@@ -245,3 +245,6 @@ Assembly instructions (from creators blog)
   * e3d-online.com (UK, a bit expensive, got nice extruders, and misc build
       parts)
 
+# Calibration
+## Delta printers
+https://www.youtube.com/watch?v=1fwwA2gfolo
