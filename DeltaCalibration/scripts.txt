@@ -1,0 +1,22 @@
+; GOTO Tower-X at Z5 Radius 60
+g1 F7000
+g1 x-51.96 y-30 z5
+
+; GOTO Tower-Y at Z5 Radius 60
+g1 F7000
+g1 x51.96 y-30 z5
+
+; GOTO Tower-Z at Z5 Radius 60
+g1 F7000
+g1 x0 y60 z5
+
+G91 ;Set to relative
+G1 F5000 Z-1.00
+G90 ; Set to Absolute Positioning
+
+G91 ;Set to relative
+G1 F5000 Z-0.10
+G90 ; Set to Absolute Positioning
+
+
+20mm line was approx 24mm

@@ -1,0 +1,14 @@
+Repeteir-Firmware 0.91 specials:
+----------------------------------
+
+- M666, M665 only works in Marlin (for calibrating tower offsets)
+- Seems like the DELTA_RADIUS (e.g: adjusting PRINTER_RADIUS is not done anymore), possible use:
+  'horizontal radius' (EEPROM via repetier host) instead. But this value does not affect the 
+  X0Y0 Z value, instead it will adjust the tower offsets??
+  
+  From: http://forum.seemecnc.com/viewtopic.php?f=37&t=6361
+    when setting the horizontal radius, 0,0,0 will always stay the same, what will change is the z height at the towers.
+    I just got done fine tuning mine using a dial indicator, not the paper tuning method, and It really made it easier to understand what was happening.
+  
+  
+  Does it work to calibrate the 'horizontal radius' first then? let's try. But 

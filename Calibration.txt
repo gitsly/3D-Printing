@@ -1,0 +1,9 @@
+-------------------------------------------------------------
+1. Set layer height
+-------------------------------------------------------------
+  * Print the .5mm thin wall
+  * Print this and make sure that the layers adhere
+    well but the nozzle does NOT drag through while printing.
+  * Adjust layer height by .01 increments.
+  
+  Test went ok at 0.19mm layer height.

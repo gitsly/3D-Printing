@@ -1,0 +1,5 @@
+E3D Everyday - ABS - White - 1.75mm - 750g:
+This is an awesome quality filament - some of the nicest-to-print ABS we've ever used, on an easy-to-manage spool, that is shipped shrink wrapped with a packet of dessicant. Manufactured in the EU at a facility which with we work closely from resin specially formulated for 3D printing, with no mystery additives or possibility of harmful contamination.
+Variance in diameter guaranteed to be better than +/-0.05mm for 1.75, and +/-0.10mm for 2.85mm. However in practive we're seeing much better tolerances than this, in the order of +/-0.02mm. This filament is easy to print, produces good quality prints, with extremely low ooze, nice surface finish, great bridges and is generally everything you would expect of good quality filament but at an everyday price.
+This ABS prints best at temperatures from 230c to 240C, depending on your speed and layer height. Prints onto Kapton, or "ABS juice" coated glass, or UHU Stic coated glass with a bed temperature of 110C.
+- See more at: http://e3d-online.com/E3D-Everyday-ABS-175-white#sthash.R1F9Wmmp.dpuf

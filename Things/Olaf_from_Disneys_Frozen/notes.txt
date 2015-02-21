@@ -1,0 +1,3 @@
+[Update:] Whole one-piece Olaf has been upload. Although I've only verified the halved version.
+Files are grouped by sets. Set 0 has hair separate. Set 1 has hair merged. I will upload a whole merged Olaf model soon, for those that wish to print it in one go. 
+Verified on a Makerbot Thing-O-Matic at .30mm layer height with 10% infill.
